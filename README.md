@@ -37,9 +37,9 @@ Browser
 1. Install JDK 17 and Maven 3.8+.
 2. Build and test:
 
-   ```bash
+```bash
    mvn -B clean verify
-   ```
+```
 
 3. Deploy `target/kaviMart.war` to Apache Tomcat 9.
 4. Open the application context in a browser. The default embedded database is file-based at `./data/kavimart`.
@@ -68,13 +68,13 @@ Seeded demo account emails are `admin@kavimart.local`, `buyer@kavimart.local`, a
 
 ## Repository layout
 
-- `src/main/java/com/kavimart/kavimart/controller` — thin Servlets
-- `src/main/java/com/kavimart/kavimart/service` — business rules
-- `src/main/java/com/kavimart/kavimart/dao` — interfaces and JDBC implementations
-- `src/main/java/com/kavimart/kavimart/model` — entities
-- `src/main/java/com/kavimart/kavimart/dto` — API/request/response shapes
-- `src/main/java/com/kavimart/kavimart/filter` — encoding and session checks
-- `src/main/java/com/kavimart/kavimart/listener` — pool/database lifecycle
+- `src/main/java/com/kavimart/controller` — thin Servlets
+- `src/main/java/com/kavimart/service` — business rules
+- `src/main/java/com/kavimart/dao` — interfaces and JDBC implementations
+- `src/main/java/com/kavimart/model` — entities
+- `src/main/java/com/kavimart/dto` — API/request/response shapes
+- `src/main/java/com/kavimart/filter` — encoding and session checks
+- `src/main/java/com/kavimart/listener` — pool/database lifecycle
 - `src/main/resources/schema.sql` and `seed.sql` — checked-in database scripts
 - `src/main/webapp/WEB-INF/jsp` — server-rendered views
 
